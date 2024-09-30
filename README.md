@@ -23,7 +23,7 @@ Este é um projeto de uma API para gerenciar uma lista de tarefas (ToDo List) de
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/todo-list-api.git
+   git clone https://github.com/NicolasFreitas1/todo-application.git
    ```
 
 2. Navegue até o diretório do projeto:
@@ -32,13 +32,19 @@ Este é um projeto de uma API para gerenciar uma lista de tarefas (ToDo List) de
    cd todo-application
    ```
 
-3. Compile e execute o projeto:
+3. No arquivo **TodoService** altere a variável **FILE_PATH** para:
+
+   ```java
+    private static final String FILE_PATH = "src/main/resources/tasks.json";
+   ```
+
+4. Compile e execute o projeto:
 
    ```bash
    ./mvnw spring-boot:run
    ```
 
-4. A API estará disponível em: `http://localhost:8080`
+5. A API estará disponível em: `http://localhost:8080`
 
 ### Usando Docker
 
@@ -148,4 +154,3 @@ src
     └── resources
         └── tasks.json  # Arquivo JSON para armazenar as tarefas
 ```
-

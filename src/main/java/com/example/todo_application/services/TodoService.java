@@ -12,7 +12,9 @@ import java.util.List;
 
 @Service
 public class TodoService {
-    private static final String FILE_PATH = "src/main/resources/tasks.json";
+    // Caso esteja rodando localmente, trocar valor da variável para: "src/main/resources/tasks.json";
+    
+    private static final String FILE_PATH = "/app/resources/tasks.json";
     private ObjectMapper objectMapper = new ObjectMapper();
 
     public List<Task> getTasks() throws IOException {
