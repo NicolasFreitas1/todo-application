@@ -51,7 +51,7 @@ Este é um projeto de uma API para gerenciar uma lista de tarefas (ToDo List) de
 1. Construa a imagem Docker:
 
    ```bash
-   docker-compose up --build
+   docker-compose build
    ```
 
 2. Inicie o container docker:
